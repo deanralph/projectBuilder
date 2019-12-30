@@ -1,46 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'layout.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>Project Buider</title>
-</head>
+{% block title %} projectBuilder {% endblock %}
 
-<body>
+{% block body %}
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">projectBuilder.ct 2: Electric Boogaloo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="settings">Settings</a>
-            </li>
-          </ul>
+<div class="container-fluid">
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Project Name</label>
+            <input class="form-control" id="exampleFormControlInput1" placeholder="Enter Project Name">
         </div>
-      </nav>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Enter Brief Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg">Create</button>
+    </form>
+</div>
 
-    <div class="container-fluid">
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Project Name</label>
-                <input class="form-control" id="exampleFormControlInput1" placeholder="Enter Project Name">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Enter Brief Description</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="button" class="btn btn-primary btn-lg">Create</button>
-        </form>
-    </div>
-</body>
-
-</html>
+{% endblock %}
