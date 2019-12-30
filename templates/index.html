@@ -10,21 +10,36 @@
 </head>
 
 <body>
-    <div class="jumbotron">
-        <div class="container-fluid" style="margin-top: 10px;">
-            <h3>Flaskception.ct 2: Electric Boogaloo</h3>
-            <form>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Project Name</label>
-                    <input class="form-control" id="exampleFormControlInput1" placeholder="Enter Project Name">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Enter Brief Description</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="button" class="btn btn-primary btn-lg">Create</button>
-            </form>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">projectBuilder.ct 2: Electric Boogaloo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="settings">Settings</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+
+    <div class="container-fluid">
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Project Name</label>
+                <input class="form-control" id="exampleFormControlInput1" placeholder="Enter Project Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Enter Brief Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg">Create</button>
+        </form>
     </div>
 </body>
 
