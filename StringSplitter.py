@@ -12,7 +12,7 @@ class StringSplitter():
         arrSplitLines = []
 
         for i, word in enumerate(self):
-            varCurLine += f"{word} ""
+            varCurLine += f"{word} "
             if i != len(varList)-1:
                 varNewLine += f"{varOldLine}{self[i+1]}"
 
