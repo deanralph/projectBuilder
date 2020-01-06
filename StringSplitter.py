@@ -13,12 +13,14 @@ class StringSplitter():
 
         for i, word in enumerate(self):
             varCurLine += f"{word} ""
-            varNewLine += f"{varOldLine}{self[i+1]}"
+            if i != len(varList)-1:
+                varNewLine += f"{varOldLine}{self[i+1]}"
 
             if len(varNewLine) >= noOfCharsPerLine:
                 varOldLine = varCurLine
+                varNewLine = ""
 
-            if i = len(self)-1:
+            if i == len(self)-1:
                 varOldLine = varCurLine
 
             if varOldLine != "":
