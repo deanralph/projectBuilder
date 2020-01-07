@@ -2,7 +2,7 @@ class StringSplitter():
 
     def __init__(self, stringData):
 
-        self = stringData.split(" ")
+        self = stringData
 
     def splitLines(self, noOfCharsPerLine):
 
@@ -11,10 +11,10 @@ class StringSplitter():
         varCurLine = ""
         arrSplitLines = []
 
-        for i, word in enumerate(self):
+        for i, word in enumerate(self.split(" ")):
             varCurLine += f"{word} "
             if i != len(varList)-1:
-                varNewLine += f"{varOldLine}{self[i+1]}"
+                varNewLine += f"{varOldLine}{self.split(" ")[i+1]}"
 
             if len(varNewLine) >= noOfCharsPerLine:
                 varOldLine = varCurLine
