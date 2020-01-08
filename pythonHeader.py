@@ -1,6 +1,7 @@
 import datetime
+import textwrap
 
-def pythonTitle(title):
+def pythonTitle(title, shortDesc):
   varSpacing = 75
   varReturn = ""
   varDashes = "# "
@@ -26,5 +27,8 @@ def pythonTitle(title):
   varReturn += "\n#"
   varReturn += f"\n# Project Title: {title}"
   varReturn += f"\n# Short Description:"
+  
+  for lines in textwrap.wrap(shortDesc, width=varSpacing):
+    varReturn += f"\n# {lines}"
 
   return varReturn
