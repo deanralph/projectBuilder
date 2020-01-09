@@ -6,7 +6,6 @@ def pythonTitle(title, shortDesc):
   varReturn = ""
   varDashes = "# "
   whiteSpace = ""
-  varTitle = title
 
   for _ in range(1, varSpacing):
     varDashes += "-"
@@ -20,6 +19,14 @@ def pythonTitle(title, shortDesc):
       whiteSpace += " "    
             
     varReturn += f"# |{whiteSpace}{title} {whiteSpace}|"
+    varReturn += f"\n{varDashes}" 
+  else:
+    varHalf = ((varSpacing - len(title)) / 2)
+
+    for _ in range (1, int(varHalf)):
+      whiteSpace += " "    
+            
+    varReturn += f"# |{whiteSpace}{title}{whiteSpace}|"
     varReturn += f"\n{varDashes}" 
 
   varReturn += "\n# Dean Ralph"
