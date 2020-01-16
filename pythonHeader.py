@@ -1,8 +1,7 @@
 import datetime
 import textwrap
 
-def pythonTitle(title, shortDesc):
-  varSpacing = 75
+def pythonTitle(title, shortDesc, varSpacing):
   varReturn = ""
   varDashes = "# "
   whiteSpace = ""
@@ -32,7 +31,7 @@ def pythonTitle(title, shortDesc):
   varReturn += "\n# Dean Ralph"
   varReturn += f"\n# {str(datetime.date.today())}"
   varReturn += "\n#"
-  varReturn += f"\n# Project Title: {title}\n#"
+  varReturn += f"\n# Project Title:\n# {title}\n#"
   varReturn += f"\n# Short Description:"
   
   for lines in textwrap.wrap(shortDesc, width=varSpacing):
