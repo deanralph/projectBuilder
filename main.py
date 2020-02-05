@@ -13,6 +13,10 @@
 #Imports
 from flask import Flask, render_template
 
+#Create Project
+def createProject(proName, shortDesc):
+    pass
+
 #Main app
 app = Flask(__name__)
 
