@@ -12,10 +12,17 @@
 
 #Imports
 from flask import Flask, render_template
+import pythonHeader
+import json
+
+#Reads Config File
+def returnConfig(jsonFile):
+    with open(jsonFile) as file:
+        return file.json.load()
 
 #Create Project
 def createProject(proName, shortDesc):
-    pass
+    savePath = f"/mnt/Share/Projects/Python/{proName}"
 
 #Main app
 app = Flask(__name__)
