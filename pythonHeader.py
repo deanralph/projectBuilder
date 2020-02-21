@@ -10,21 +10,17 @@ def pythonTitle(title, shortDesc, varSpacing):
     varDashes += "-"
 
   varReturn = f"{varDashes}\n"
+  
+  varHalf = ((varSpacing - len(title)) / 2) - 1
+  
+  for _ in range (1, int(varHalf)):
+    whiteSpace += " "    
 
   if len(title) % 2 != 0:
-    varHalf = ((varSpacing - len(title)) / 2) - 1
-
-    for _ in range (1, int(varHalf)):
-      whiteSpace += " "    
-            
     varReturn += f"# |{whiteSpace}{title} {whiteSpace}|"
     varReturn += f"\n{varDashes}" 
+    
   else:
-    varHalf = ((varSpacing - len(title)) / 2)
-
-    for _ in range (1, int(varHalf)):
-      whiteSpace += " "    
-            
     varReturn += f"# |{whiteSpace}{title}{whiteSpace}|"
     varReturn += f"\n{varDashes}" 
 
