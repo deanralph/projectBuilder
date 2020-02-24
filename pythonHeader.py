@@ -33,6 +33,8 @@ def pythonTitle(title, shortDesc, varSpacing):
   for lines in textwrap.wrap(shortDesc, width=varSpacing):
     varReturn += f"\n# {lines}"
 
-  varReturn += "\n\n# Imports:\n\n\n# Main App:"
+  varReturn += "\n\n# Imports:\n\n\n# Main App:\n\n"
+  varReturn += """if __name__ == "__main__":
+    pass"""
 
   return varReturn
