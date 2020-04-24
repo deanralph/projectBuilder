@@ -28,8 +28,16 @@ def createProject(proName, shortDesc):
 app = Flask(__name__)
 
 @app.route('/')
-def index():
+def pageIndex():
     return render_template("index.html")
+
+@app.route('/settings')
+def pageSettings():
+    return render_template("settings.html")
+
+@app.route('/prep')
+def pagePrep():
+    return render_template("prep.html")
 
 app.run(debug=True)
 
