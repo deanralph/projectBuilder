@@ -39,5 +39,5 @@ def pageSettings():
 def pagePrep():
     return render_template("prep.html")
 
-app.run(debug=True)
+app.run(host="0.0.0.0")
 
