@@ -1,9 +1,22 @@
+# Dean Ralph
+# 2021-10-14
+#
+# Project Title: Pyhton Boilerplate Maker
+# Current Version: 0.1
+#
+# Short Description: A quick and easy header maker for new python files
+#
+# Imports:
+
 import datetime
 import textwrap
 
+
+# Main:
+
 peramsDic = {"AUTH":"", 
 "DATE":datetime.date.today(), 
-"PRO":"", 
+"PRO":"",
 "VER":"0.1",
 "DESC":""}
 
