@@ -1,0 +1,11 @@
+# $AUTH$
+# $DATE$
+#
+# Project Title: $PRO$
+# Current Version: $VER$
+#
+# Short Description: $DESC$
+#
+# Imports:
+
+# Main:
