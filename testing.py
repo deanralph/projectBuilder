@@ -1,7 +1,7 @@
 import pythonHeader
 import os
 
-varFilePath = input("Where are we saying to? ")
+varFilePath = input("Where are we saving to? ")
 varProjectName = input("Whats the project called? ")
 varDesc = input("What does it do? ")
 
